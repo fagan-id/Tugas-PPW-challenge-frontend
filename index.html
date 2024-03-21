@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <!-- import logo buat favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <!-- Import css -->
+  <link rel="stylesheet" href="style.css">
+  <!-- Import Font dari Google -->
+  <link rel="import" href="https://fonts.google.com/specimen/Manrope">
+
+  <title>Frontend Mentor | Article preview component</title>
+
+</head>
+
+<body>
+  <section>
+    <!-- div container, flexbox sebagai tempat untuk item dan content yang ada di layar  -->
+    <div class="container"> 
+      <!-- membagi item agar membelah flexbox menjadi 2 bagian -->
+      <div class="item"><img src="/images/drawers.jpg" alt="drawers" style="max-width: 100%;"></div>
+      <div class="item">
+        <!-- div text, flexbox di dalam flexbox untuk konten berupa tulisan -->
+        <div class="text"> 
+          <b>Shift the overall look and feel by adding these wonderful
+            touches to furniture in your home</b>
+
+          <p>Ever been in a room and felt like something was missing? Perhaps
+          it felt slightly bare and uninviting. I’ve got some simple tips
+          to help you make any room feel complete.</p>
+          <!-- div name, flexbox di dalam flexbox untuk data diri -->
+          <div class="name">
+            <img src="/images/avatar-michelle.jpg" alt="face-photo" style="max-width: 100%; height: 40px; width: auto;">
+            <ul>
+              <li>Michelle Appleton</li>
+              <li>28 Jun 2020</li>
+            </ul>
+            <!-- div share, flexbox di dalam flexbox untuk share icon -->
+            <div class="share"><img src="/images/icon-share.svg" alt="icon-share"></div>
+        </div>
+        </div>
+      </div>
+  </section>
+</body>
+<!-- footer untuk copyright usage -->
+<footer>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Fagan</a>.
+  </div>
+</footer>
+
+
+</html>

@@ -1,0 +1,101 @@
+/* melakukan import fonts untuk dipakai  */
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Manrope:wght@200..800&display=swap');
+
+
+body {
+    font-size: 13px; /*ukuran font text*/
+    font-weight: 500; /* mengubah ketebalan font*/
+    font-family: Manrope; /*font-family hasil dari import*/
+    background-color: hsl(210, 46%, 95%);
+}
+
+section {
+    display: flex; /*membuat flexbox*/
+    height: 100vh; /*mengubah ukuran div agar mengambil keseluruhan layar*/
+    justify-content: center; /* merapihkan content menjadi rata-tengah secara horizontal*/
+    align-items: center; /*merapihkan content agar menjadi rata-tengah secara vertical*/
+    min-height: 100%; /*100% layar*/
+    min-width: 100%; /*100% layar*/
+}
+
+.container {
+    display: flex; /*membuat container untuk keselurhan content*/
+    align-items: center;
+    justify-content: center;
+    width: 50;
+    height: 50;
+    flex-wrap: wrap; /*mengubah baris yang dipakai content, (wrap/nowrap/wrapreverse)*/
+    border-radius: 10px; /*mengubah ujung dari border*/
+    background-color: white;
+}
+
+.container .item {
+    display: flex; /*membuat item di dalam container*/
+    padding: 10px;
+    height: 300px;
+    width: 400px;
+    align-items: center;
+    justify-content: space-between; /* content memiliki spasi ditengah yang seimbang*/
+}
+
+.text {
+    color: hsl(214, 17%, 51%);
+    display: flex;
+    height: 300px;
+    flex-direction: column; /*membuat content tersusun secara kolom (atas ke bawah)*/
+    justify-content: space-evenly; /* content memiliki spasi yang imbang di sekitar content*/
+}
+
+.text b {
+    color: hsl(217, 19%, 35%);
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.name {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /*merapihkan content agar rata-kiri secara horizontal*/
+    flex-direction: row; /*mengubah arah flex menjadi baris (satu baris)*/
+    height: 30px;
+}
+
+.name img {
+    border-radius: 100%; /*membuat border content bulat*/
+    justify-content: space-between;
+}
+
+.name ul {
+    list-style-type: none; /*menghilangkan bullet pada ul*/
+}
+
+.share {
+    flex: 1; /*membuat content mengisi sisa space yang tidak terpakai*/
+    display: flex;
+    justify-content: flex-end; /*membuat content rata kanan*/
+    width: 60px;
+    padding-right: 10px;/*menambahkan padding pada box*/
+}
+
+.share img {
+    transform: scale(1, 1); /*mengubah skala ukuran content*/
+    background-color: hsl(210, 46%, 95%);
+    padding: 10px;
+
+}
+
+.attribution { /*footer*/
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a { /*link pada footer*/
+    color: hsl(228, 45%, 44%);
+}
+/*media-quaries mengubah berdasarkan ukuran dari layar*/
+@media (max-width: 900px) {
+    .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
